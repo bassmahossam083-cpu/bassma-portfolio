@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- تحسين محركات البحث SEO -->
+    <title>بسمة حسام داود | Bassma Hossam Dawod - الملف الشخصي</title>
+    <meta name="description" content="الملف الشخصي لـ بسمة حسام داود - طالبة علوم حاسب، مستشارة تعليمية ومختصة تسويق وإعلام رقمي وتطوير تطبيقات.">
+    <meta name="keywords" content="بسمة حسام داود, علوم حاسب, جامعة الإمام محمد بن سعود الإسلامية, تسويق رقمي, أمن معلومات, ذكاء اصطناعي, تطوير ألعاب, Bassma Hossam Dawod">
+    <meta name="author" content="بسمة حسام داود">
+
+    <!-- وسوم المعاينة لمنصات التواصل Open Graph (WhatsApp, Twitter, LinkedIn) -->
+    <meta property="og:title" content="بسمة حسام داود | الملف الشخصي">
+    <meta property="og:description" content="طالبة علوم حاسب | مستشارة تعليمية ومختصة تسويق وإعلام رقمي">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+            --card-inner: #f1f5f9;
+            --primary-color: #1e3c72;
+            --secondary-color: #2a5298;
+            --border-color: #1e3c72;
+            --footer-bg: #e9ecef;
+            --footer-text: #6c757d;
+            --input-bg: #ffffff;
+        }
+
+        /* متغيرات الوضع الداكن (Dark Mode) */
+        [data-theme="dark"] {
+            --bg-color: #0f172a;
+            --text-color: #f1f5f9;
+            --card-bg: #1e293b;
+            --card-inner: #334155;
+            --primary-color: #38bdf8;
+            --secondary-color: #60a5fa;
+            --border-color: #38bdf8;
+            --footer-bg: #0f172a;
+            --footer-text: #94a3b8;
+            --input-bg: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            background-image: radial-gradient(rgba(30, 60, 114, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* رسومات تقنية بالخلفية */
+        header::before {
+            content: "</>";
+            position: absolute;
+            font-size: 15rem;
+            opacity: 0.05;
+            top: -50px;
+            right: 5%;
+            font-weight: bold;
+            color: white;
+            pointer-events: none;
+        }
+
+        .controls-wrapper {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        html[dir="ltr"] .controls-wrapper {
+            left: auto;
+            right: 20px;
+        }
+
+        .btn-toggle {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid white;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-toggle:hover {
+            background: white;
+            color: #1e3c72;
+        }
+
+        .profile-img-container {
+            margin: 0 auto 15px auto;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: var(--card-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 12px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 12px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--border-color);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .card {
+            border-right: 4px solid var(--border-color);
+            background: var(--card-inner);
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        html[dir="ltr"] .card {
+            border-right: none;
+            border-left: 4px solid var(--border-color);
+            border-radius: 8px 0 0 8px;
+        }
+
+        .card h3 {
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+
+        .card .date {
+            font-size: 0.88rem;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        ul.bullet-list {
+            padding-right: 20px;
+            margin-top: 8px;
+        }
+
+        html[dir="ltr"] ul.bullet-list {
+            padding-right: 0;
+            padding-left: 20px;
+        }
+
+        ul.bullet-list li {
+            margin-bottom: 6px;
+        }
+
+        .contact-links {
+            margin-bottom: 25px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            margin: 8px 8px 0 0;
+            padding: 10px 18px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: opacity 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .contact-links a:hover {
+            opacity: 0.9;
+        }
+
+        .skills-tag {
+            display: inline-block;
+            background: var(--card-inner);
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin: 4px;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+
+        /* نموذج التواصل Contact Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .form-group input, .form-group textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: var(--input-bg);
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .submit-btn {
+            padding: 12px 24px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            align-self: flex-start;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--footer-bg);
+            color: var(--footer-text);
+            font-size: 0.9rem;
+        }
+
+
+        /* لمسات إضافية للملف الشخصي */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 14px;
+            margin-top: 24px;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.14);
+            border: 1px solid rgba(255,255,255,0.30);
+            border-radius: 14px;
+            padding: 16px;
+            backdrop-filter: blur(8px);
+        }
+
+        .stat-card strong {
+            display: block;
+            font-size: 1.35rem;
+            margin-bottom: 3px;
+        }
+
+        section, .card, .stat-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease,
+                        background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .volunteer-highlight {
+            border: 1px solid var(--border-color);
+            background: linear-gradient(135deg, var(--card-inner), var(--card-bg));
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .controls-wrapper { top: 12px; left: 12px; }
+            html[dir="ltr"] .controls-wrapper { right: 12px; left: auto; }
+            section { padding: 22px 18px; }
+            .container { padding: 0 12px; }
+        }
+
+
+        /* ===== Professional Portfolio Enhancements ===== */
+        html { scroll-behavior: smooth; }
+        body { overflow-x: hidden; }
+
+        header {
+            min-height: 72vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            isolation: isolate;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            background: rgba(255,255,255,.08);
+            left: -160px;
+            bottom: -220px;
+            z-index: -1;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 22px;
+        }
+
+        .hero-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 145px;
+            padding: 11px 18px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            border: 1px solid rgba(255,255,255,.65);
+            transition: transform .25s ease, background .25s ease;
+        }
+
+        .hero-btn.primary { background: white; color: #1e3c72; }
+        .hero-btn.secondary { color: white; background: rgba(255,255,255,.12); backdrop-filter: blur(8px); }
+        .hero-btn:hover { transform: translateY(-3px); }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        #projects .card { margin-bottom: 0; min-height: 100%; }
+
+        .timeline { position: relative; padding-right: 27px; }
+        html[dir="ltr"] .timeline { padding-right: 0; padding-left: 27px; }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 8px; bottom: 8px; right: 7px;
+            width: 2px;
+            background: var(--border-color);
+            opacity: .35;
+        }
+        html[dir="ltr"] .timeline::before { right: auto; left: 7px; }
+
+        .timeline .card { position: relative; }
+        .timeline .card::before {
+            content: "";
+            position: absolute;
+            width: 12px; height: 12px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            top: 21px; right: -29px;
+            box-shadow: 0 0 0 5px var(--card-bg);
+        }
+        html[dir="ltr"] .timeline .card::before { right: auto; left: -29px; }
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-top: 22px;
+        }
+
+        .achievement-box {
+            background: var(--card-inner);
+            border: 1px solid rgba(100,116,139,.18);
+            border-radius: 14px;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .achievement-box strong {
+            display: block;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 4px;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+        .cta-section h2, .cta-section p { color: white; }
+        .cta-section h2 { border-color: rgba(255,255,255,.8); }
+
+        .form-status {
+            display: none;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+            background: var(--card-inner);
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        .back-to-top {
+            position: fixed;
+            left: 18px; bottom: 18px;
+            width: 44px; height: 44px;
+            border: 0; border-radius: 50%;
+            background: var(--primary-color);
+            color: white; cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0,0,0,.18);
+            z-index: 200; display: none;
+        }
+        html[dir="ltr"] .back-to-top { left: auto; right: 18px; }
+
+        @media (max-width: 760px) {
+            header { min-height: 66vh; padding-top: 85px; }
+            .project-grid, .achievement-grid { grid-template-columns: 1fr; }
+            nav ul li { margin: 4px 7px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+            .reveal { opacity: 1; transform: none; }
+        }
+
+        .lang-en { display: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="controls-wrapper">
+            <button class="btn-toggle" onclick="toggleTheme()" id="themeBtn">🌙</button>
+            <button class="btn-toggle" onclick="toggleLanguage()" id="langBtn">English</button>
+        </div>
+
+        <!-- الإطار الدائري للصورة الشخصية -->
+        <div class="profile-img-container">
+            <img src="profile.jpg" alt="بسمة حسام داود">
+        </div>
+
+        <h1 class="lang-ar">بسمة حسام داود</h1>
+        <h1 class="lang-en">Bassma Hossam Dawod</h1>
+        
+        <p class="lang-ar">طالبة علوم حاسب</p>
+        <p class="lang-en">Computer Science Student</p>
+        <div class="hero-actions">
+            <a class="hero-btn primary" href="#projects"><span class="lang-ar">مشاريعي</span><span class="lang-en">View Projects</span></a>
+            <a class="hero-btn secondary" href="#contact"><span class="lang-ar">تواصل معي</span><span class="lang-en">Contact Me</span></a>
+            <a class="hero-btn secondary" href="https://github.com/bassmahossam083-cpu" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="hero-btn secondary" href="https://www.linkedin.com/in/bassma-hossam-dawod-7536a3292" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <strong>203+</strong>
+                <span class="lang-ar">ساعة تطوعية</span>
+                <span class="lang-en">Volunteer Hours</span>
+            </div>
+            <div class="stat-card">
+                <strong>9+</strong>
+                <span class="lang-ar">مشاريع تقنية</span>
+                <span class="lang-en">Technical Projects</span>
+            </div>
+            <div class="stat-card">
+                <strong>AR / EN</strong>
+                <span class="lang-ar">ملف شخصي ثنائي اللغة</span>
+                <span class="lang-en">Bilingual Portfolio</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about"><span class="lang-ar">نبذة عني</span><span class="lang-en">About</span></a></li>
+            <li><a href="#projects"><span class="lang-ar">المشاريع</span><span class="lang-en">Projects</span></a></li>
+            <li><a href="#experience"><span class="lang-ar">الخبرات الوظيفية</span><span class="lang-en">Experience</span></a></li>
+            <li><a href="#clubs"><span class="lang-ar">الأندية والإنجازات</span><span class="lang-en">Clubs & Achievements</span></a></li>
+            <li><a href="#courses"><span class="lang-ar">الشهادات والتدريب</span><span class="lang-en">Certifications</span></a></li>
+            <li><a href="#contact"><span class="lang-ar">التواصل</span><span class="lang-en">Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- قسم نبذة عني -->
+        <section id="about">
+            <h2><span class="lang-ar">نبذة عني</span><span class="lang-en">About Me</span></h2>
+            <div class="lang-ar">
+                <p>طالبة بكالوريوس علوم حاسب في جامعة الإمام محمد بن سعود الإسلامية، أمتلك شغفاً كبيراً يجمع بين التقنية والتسويق والإعلام الرقمي وصناعة المحتوى. لدي خبرة متنوعة في تقديم الاستشارات التعليمية والإرشاد الأكاديمي، التسويق الميداني والرقمي، بالإضافة إلى قيادة وإدارة اللجان وتغطية الفعاليات الضخمة تصويراً وتنظيماً.</p>
+                <br>
+                <strong>المهارات الرئيسية:</strong><br>
+                <span class="skills-tag">التسويق الرقمي والميداني</span>
+                <span class="skills-tag">أمن المعلومات والتشفير (Cryptography)</span>
+                <span class="skills-tag">الذكاء الاصطناعي وتعلم الآلة (AI & ML)</span>
+                <span class="skills-tag">الاسترجاع المعزز بالتوليد (RAG)</span>
+                <span class="skills-tag">اختبار البرمجيات والتوثيق (Testing & Documentation)</span>
+                <span class="skills-tag">تطوير المترجمات (Compilers & LALR Parsers)</span>
+                <span class="skills-tag">تطوير الألعاب (Unity 2D / C#)</span>
+                <span class="skills-tag">شبكات الحاسب البرمجية (Socket Programming)</span>
+                <span class="skills-tag">تطوير الويب (JavaScript / HTML)</span>
+                <span class="skills-tag">تقنيات الدرونز (Drones Technologies)</span>
+                <span class="skills-tag">صناعة المحتوى والتغطيات الإعلامية</span>
+            </div>
+            <div class="lang-en">
+                <p>Computer Science student at Imam Mohammad Ibn Saud Islamic University with a passion blending Technology, Digital Marketing, Media, and Content Creation. Experienced in educational consulting, field/digital marketing, leading student committees, and managing media coverage for major university events.</p>
+                <br>
+                <strong>Key Skills:</strong><br>
+                <span class="skills-tag">Digital & Field Marketing</span>
+                <span class="skills-tag">Information Security & Cryptography</span>
+                <span class="skills-tag">AI & Machine Learning</span>
+                <span class="skills-tag">Retrieval-Augmented Generation (RAG)</span>
+                <span class="skills-tag">Software Testing & Documentation</span>
+                <span class="skills-tag">Compiler Design & LALR Parsers</span>
+                <span class="skills-tag">Game Development (Unity 2D / C#)</span>
+                <span class="skills-tag">Network Socket Programming</span>
+                <span class="skills-tag">Web Development (JavaScript / HTML)</span>
+                <span class="skills-tag">Drone Technologies</span>
+                <span class="skills-tag">Content Creation & Media Coverage</span>
+            </div>
+        
+            <div class="achievement-grid">
+                <div class="achievement-box"><strong>203+</strong><span class="lang-ar">ساعة تطوعية</span><span class="lang-en">Volunteer Hours</span></div>
+                <div class="achievement-box"><strong>AI & ML</strong><span class="lang-ar">اهتمام تقني</span><span class="lang-en">Technical Interest</span></div>
+                <div class="achievement-box"><strong>AR / EN</strong><span class="lang-ar">ملف ثنائي اللغة</span><span class="lang-en">Bilingual Portfolio</span></div>
+            </div>
+
+</section>
+
+        <!-- قسم المشاريع -->
+        <section id="projects">
+            <h2><span class="lang-ar">المشاريع الأكاديمية والتقنية</span><span class="lang-en">Projects</span></h2>
+            
+            <div class="project-grid">
+<div class="card">
+                <h3><span class="lang-ar">بناء وتطوير المحلل اللغوي للمترجمات (LALR Compiler Parser)</span><span class="lang-en">LALR Parser Construction & Bottom-Up Parsing Simulator</span></h3>
+                <div class="date">Compiler Construction | LALR Parsing | LR(1) & LR(0) Automata | Shift-Reduce Simulation | Conflict Detection</div>
+                <p class="lang-ar">مشروع متقدم لبناء المحلل اللغوي LALR Parser للمترجمات من الصفر دون مكتبات خارجية. يتضمن توليد حالات LR(1) ودمجها لبناء جداول ACTION/GOTO، واكتشاف تعارضات Shift/Reduce، ومحاكاة عملية الإعراب بأسلوب (Stack-Input-Action).</p>
+                <p class="lang-en">Designed a bottom-up LALR Parser from scratch for compiler design. Generated LR(1) item sets, merged identical LR(0) cores to build compact ACTION/GOTO tables, detected grammar conflicts, and simulated shift-reduce parsing using the three-column approach.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">نظام حسابي موزع وقياس التأخير عبر الشبكة (TCP Client-Server & RTT Analyzer)</span><span class="lang-en">TCP Client-Server Distributed Computation & RTT Analyzer</span></h3>
+                <div class="date">Java Socket Programming | TCP/IP | Multithreading | LAN Networking | RTT Measurement</div>
+                <p class="lang-ar">مشروع تطبيقي لبناء خادم وتطبيق عميل موزع عبر شبكة LAN ببروتوكول TCP. يتضمن خادماً متعدد المسارات (Multithreaded Server) لحساب الدوال الرياضيات، وقياس زمن الانتقال والدوران (RTT) لتحليل كفاءة الشبكة ومعالجة مشاكل الترميز والجدر النارية.</p>
+                <p class="lang-en">Designed a distributed multithreaded TCP Client-Server network system using Java Sockets over a LAN. Processed mathematical requests concurrently, measured real-time Round-Trip Time (RTT) latency, and optimized cross-platform network socket I/O.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">تطوير واختبار أنظمة تشفير المفتاح السري (Secret-Key Encryption & Crypto Lab)</span><span class="lang-en">Secret-Key Encryption & Dictionary Attack Implementation</span></h3>
+                <div class="date">OpenSSL | Java Crypto Library | Linux / Ubuntu VM | SEED Labs | AES Cryptography</div>
+                <p class="lang-ar">مشروع تطبيقي في أمن المعلومات على بيئة SEED Labs لتشفير البيانات بـ OpenSSL واستخدام خوارزميات AES بأنماطها (CBC, CFB, CTR)، وتحليل أمان نمط ECB مقابل CBC على الصور، بالإضافة لكتابة برنامج Java لتنفيذ هجوم القاموس (Dictionary Attack) وكسر مفتاح التشفير.</p>
+                <p class="lang-en">Cybersecurity project evaluating secret-key encryption using OpenSSL on SEED Ubuntu VM. Tested AES modes (CBC, CFB, CTR), analyzed ECB vs. CBC image pattern leaks, and implemented a Java-based dictionary attack to recover AES encryption keys.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">لعبة ثنائية الأبعاد Flappy Bird: Tropical Escape (تطوير Unity)</span><span class="lang-en">Flappy Bird: Tropical Escape (2D Unity Game)</span></h3>
+                <div class="date">Unity 2D | C# Scripting | Rigidbody Physics | Game Design Documentation (GDD)</div>
+                <p class="lang-ar">تطوير لعبة كاملة على 3 مراحل بإصدار عصري. تتضمن قائمة اختيار الشخصيات ومستويات الصعوبة، شريط طاقة تفاعلي عند الاصطدامات، نظام المكافآت وجمع العملات لتفعيل درع الحماية، وتوثيق معمارية اللعبة بملف GDD.</p>
+                <p class="lang-en">A feature-rich 2D Arcade Runner developed in Unity across 3 phases. Features multi-character selection, Easy/Hard difficulty modes, continuous Power Bar system, collectible coins, shield invincibility rewards, and complete GDD documentation.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">تصنيف البريد العشوائي باستخدام أشجار القرار (Email Spam Classification)</span><span class="lang-en">Email Spam Classification using Decision Trees</span></h3>
+                <div class="date">Python | Scikit-Learn | Decision Trees | Data Preprocessing & Balancing</div>
+                <p class="lang-ar">بناء نموذج تعلم آلة لفرز البريد العشوائي (Spam) عبر مجموعة بيانات Spambase. تضمن العمل معالجة Overfitting بضبط عمق الشجرة (Max_Depth=7)، ومعالجة عدم توازن البيانات (Undersampling) لرفع دقة النموذج إلى 91.64%، وتحويل الشجرة لقواعد منطقية Visualized Rules.</p>
+                <p class="lang-en">Built a Machine Learning classification model on the Spambase dataset. Addressed overfitting by optimizing tree depth (Max_Depth=7) and handled class imbalance via undersampling, achieving 91.64% test accuracy and extracting interpretable decision rules.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">حل مشكلة الملكات N-Queens باستكشاف خوارزميات CSP</span><span class="lang-en">Solving N-Queens Puzzle as a Constraint Satisfaction Problem (CSP)</span></h3>
+                <div class="date">Python | Artificial Intelligence | CSP | Backtracking | Forward Checking | MAC</div>
+                <p class="lang-ar">تمثيل وحل مشكلة N-Queens الكلاسيكية كـ CSP ومقارنة أداء خوارزميات (BT, FC, MAC) على رقع بأحجام مختلفة ($N=4, 8, 16, 32, 64$). أظهرت النتائج تفوق MAC في التقليم (Pruning) بينما حققت FC أفضل كفاءة زمنية للأحجام الكبيرة.</p>
+                <p class="lang-en">Formulated and solved the N-Queens puzzle as a CSP, evaluating BT, FC, and MAC algorithms across board sizes up to N=64. MAC achieved optimal domain pruning, while FC scaled most efficiently for large search spaces.</p>
+            </div>
+
+            <div class="card">
+                <h3>Natural Scene Image Classification using CNN</h3>
+                <div class="date">Python | TensorFlow/Keras | Deep Learning | Computer Vision</div>
+                <p class="lang-ar">تطوير شبكة عصبية تلافيفية (CNN) لتصنيف 17,000+ صورة مشاهد طبيعية إلى 6 فئات بدقة اختبار 88.6% مع تطبيق Batch Normalization و Early Stopping.</p>
+                <p class="lang-en">Developed a CNN model to classify natural scene images into 6 categories, achieving 88.6% test accuracy using TensorFlow/Keras with regularization techniques.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">تطبيق خدمة الحجاج المدعوم بالذكاء الاصطناعي</span><span class="lang-en">AI-Powered Pilgrims Service Application</span></h3>
+                <p class="lang-ar">مشروع تطوير تطبيق ذكي مخصص لخدمة وتسهيل رحلة ضيوف الرحمن والحجاج باستعمال الذكاء الاصطناعي لتوفير إرشادات وحلول سريعة ودقيقة.</p>
+                <p class="lang-en">An AI-driven mobile application designed to serve and assist Hajj pilgrims, leveraging Artificial Intelligence techniques to streamline navigation and guidance.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">رسالة | Risalah — منصة تفاعلية مدعومة بالذكاء الاصطناعي</span><span class="lang-en">Risalah — AI-Powered Interactive Islamic Knowledge Platform</span></h3>
+                <div class="date">AI for Islamic Content Hackathon | AI & RAG Validation | Interactive Historical Map | Multilingual Experience | AI Testing</div>
+                <p class="lang-ar">منصة تفاعلية لاستكشاف رحلة الإسلام عبر الزمان والمكان من خلال خريطة تاريخية تفاعلية ومرشد ذكي مرتبط بمصادر معرفية موثوقة باستخدام RAG. شاركت في المشروع ضمن هاكثون الذكاء الاصطناعي لخدمة المحتوى الإسلامي، وكان دوري مرتبطًا باختبار وتقييم مكوّنات الذكاء الاصطناعي، بما يشمل التحقق من إجابات المرشد الذكي، ارتباط الإجابات بالمصادر والسياق التاريخي، اختبار تعدد اللغات، وفحص جودة تجربة الـAI وتوثيق النتائج والأخطاء.</p>
+                <p class="lang-en">An AI-powered interactive platform for exploring the journey of Islam through time and place using an interactive historical map and a source-grounded AI guide powered by RAG. Built for the AI for Islamic Content Hackathon. My role focused on AI Testing & Validation, including validating AI-guide responses, checking contextual relevance and source grounding, testing multilingual behavior, evaluating the AI user experience, and documenting results and issues.</p>
+                <div class="contact-links" style="margin-top: 12px; margin-bottom: 0;">
+                    <a href="https://hala-fawaz.github.io/risalah/index.html" target="_blank" rel="noopener noreferrer"><span class="lang-ar">عرض المشروع</span><span class="lang-en">Live Demo</span></a>
+                    <a href="https://github.com/Hala-fawaz/risalah" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">موقع الملف الشخصي والتفاعلي (Personal Portfolio Website)</span><span class="lang-en">Interactive Personal Portfolio Website</span></h3>
+                <p class="lang-ar">هذا الموقع الشخصي التفاعلي متعدد اللغات (عربي/إنجليزي) تم تطويره بـ HTML, CSS, JavaScript لعرض السيرة الذاتية والمشاريع بشكل عصري.</p>
+                <p class="lang-en">This interactive bilingual personal portfolio website built with HTML, CSS, and JavaScript to showcase professional experiences and technical projects.</p>
+            </div>
+        
+            </div></section>
+
+        <!-- قسم الخبرات الوظيفية -->
+        <section id="experience">
+            <h2><span class="lang-ar">الخبرات الوظيفية</span><span class="lang-en">Work Experience</span></h2>
+            
+            <div class="timeline">
+<div class="card">
+                <h3><span class="lang-ar">مستشارة تعليمية وإدارة المبيعات — شركة وجهتك للدراسة بالخارج</span><span class="lang-en">Educational Consultant & Sales — Wajhatuk</span></h3>
+                <div class="date">01/03/2025 - 19/05/2026</div>
+                <p class="lang-ar">تقديم الاستشارات التعليمية، استخراج القبولات الدراسية لمعاهد اللغة والجامعات، والتنسيق الكامل مع الجهات التعليمية الدولية.</p>
+                <p class="lang-en">Providing academic counseling, securing admissions for language institutes & universities, and coordinating with international institutions.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">أخصائية تسويق — مجموعة صفوة المهيدب لطب الأسنان</span><span class="lang-en">Marketing Specialist — Safwat Al Muhaidib Dental Group</span></h3>
+                <div class="date">01/02/2022 - 30/01/2025</div>
+                <p class="lang-ar">تخطيط وتنفيذ الحملات الدعائية، وإعداد التصاميم التسويقية، وإدارة حسابات التواصل الاجتماعي، ومتابعة أداء المسوقات في الفروع.</p>
+                <p class="lang-en">Planned and executed advertising campaigns, created marketing designs, managed social media accounts, and supervised marketing staff across branches.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">أخصائية تسويق — مجموعة المسواك الطبية</span><span class="lang-en">Marketing Specialist — Al-Miswak Medical Group</span></h3>
+                <div class="date">26/06/2020 - 30/12/2022</div>
+                <p class="lang-ar">تخطيط وتنفيذ الحملات الدعائية، وإعداد التصاميم التسويقية، وإدارة حسابات التواصل الاجتماعي، ومتابعة أداء المسوقات في الفروع.</p>
+                <p class="lang-en">Planned and executed advertising campaigns, created marketing designs, managed social media accounts, and supervised marketing staff across branches.</p>
+            </div>
+
+            
+            </div></section>
+
+        <!-- قسم الأندية الجامعية والإنجازات -->
+        <section id="clubs">
+            <h2><span class="lang-ar">الأندية الجامعية والإنجازات الإعلامية</span><span class="lang-en">Clubs & Media Achievements</span></h2>
+            
+            <div class="card">
+                <h3><span class="lang-ar">المشاركة في هاكاثون تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي</span><span class="lang-en">AI Challenge Serving Islamic Content — Hackathon Participation</span></h3>
+                <p class="lang-ar">المشاركة ضمن فريق مشروع «رسالة» لتطوير منصة معرفية تفاعلية مدعومة بالذكاء الاصطناعي، مع المساهمة في اختبار وتقييم مكوّنات الذكاء الاصطناعي. كما حضرت ورش عمل متخصصة ضمن فعاليات التحدي.</p>
+                <p class="lang-en">Participated in the AI Challenge Serving Islamic Content as part of the Risalah project team, contributing to AI testing and validation and attending specialized technical workshops.</p>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">العضويات والقيادة الطلابية</span><span class="lang-en">Student Leadership & Memberships</span></h3>
+                <ul class="bullet-list lang-ar">
+                    <li>قائدة لجنة التخطيط الداخلي ومسؤولة كتابة التقارير والملفات التعريفية للهيكل — نادي الروبوتات اللاسلكية.</li>
+                    <li>تقديم دورة تدريبية بعنوان <strong>"أساسيات التسويق"</strong> بنادي الروبوتات اللاسلكية تحت إشراف القائد فراس (مع شهادة معتمدة من النادي).</li>
+                    <li>عضوة في نادي ظهير، نادي إنجاز، نادي الابتكار وريادة الأعمال (سابقاً)، ونادي أمن المعلومات.</li>
+                    <li>عضوة بقسم التصوير والإعلام بنادي الروبوتات.</li>
+                </ul>
+                <ul class="bullet-list lang-en">
+                    <li>Leader of Internal Planning Committee & Documentation Lead — Wireless Robotics Club.</li>
+                    <li>Instructor for "Marketing Fundamentals" workshop at the Wireless Robotics Club (Club Certified).</li>
+                    <li>Member of Thaheer Club, Injaz Club, Innovation & Entrepreneurship Club (Formerly), and Cybersecurity Club.</li>
+                    <li>Member of Media & Photography Department — Wireless Robotics Club.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">التغطيات الإعلامية والتصوير الاحترافي</span><span class="lang-en">Media Coverage & Photography</span></h3>
+                <ul class="bullet-list lang-ar">
+                    <li><strong>هاكاثون تحديات الفضاء:</strong> تغطية شاملة على مدار 3 أيام، وتصوير مقابلات حصريّة مع المشاركين والمرشدين والوفد الأجنبي (ممثلي وكالة ناسا NASA).</li>
+                    <li><strong>تغطية وصول ودخول الطائرات لبوليفارد رن واي:</strong> تغطية كاملة للحظة وصول الطائرات إلى الرياض.</li>
+                    <li><strong>بودكاست مع الطالبات:</strong> إعداد وإنتاج بودكاست معتمد من رئيس الجامعة ومُنشر عبر السوشيال ميديا لمدينة الملك عبدالله للطالبات.</li>
+                    <li>تغطية احتفال الجامعة باستضافة المملكة لكأس العالم 2030.</li>
+                    <li>تصوير وتنظيم احتفال اليوم الوطني بمبنى المؤتمرات.</li>
+                    <li>تصوير حفل اليوم العالمي للغة العربية (إدارة الفعاليات لمدينة الملك عبدالله للبنات).</li>
+                    <li>إعداد وتجهيز فيديو تيك توك توعوي عن "دور الذكاء الاصطناعي في الدراسة الجامعية" لصالح نادي الروبوتات.</li>
+                    <li>المشاركة كمصورة في يوم تجمع الأندية ويوم ملتقى الطالبات المستجدات.</li>
+                </ul>
+                <ul class="bullet-list lang-en">
+                    <li><strong>Space Challenges Hackathon:</strong> Full 3-day media coverage & interviews with NASA delegates, mentors, and participants.</li>
+                    <li><strong>Boulevard Runway Aircrafts Arrival:</strong> Photography and full media coverage of the aircraft arrival in Riyadh.</li>
+                    <li><strong>Students Podcast:</strong> Approved by University President and published across KSU official social media channels.</li>
+                    <li>Media coverage for KSU's FIFA World Cup 2030 hosting celebration.</li>
+                    <li>Photography & organization for National Day celebration at the Conference Center.</li>
+                    <li>Photography for World Arabic Language Day (King Abdullah Female Student Campus Event Dept.).</li>
+                    <li>Scripted & filmed a TikTok video on "AI Role in Academic Life" for the Robotics Club.</li>
+                    <li>Event photographer for Clubs Gathering Day & New Student Orientation Day.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3><span class="lang-ar">التقديم والتنظيم والمعسكرات</span><span class="lang-en">Workshops & Bootcamps Organization</span></h3>
+                <ul class="bullet-list lang-ar">
+                    <li>الإشراف الكامل على مسابقة "فوازير رمضان" وإعداد الملفات التعريفية.</li>
+                    <li>المشاركة في تنظيم اللقاء التعريفي لمستجدي كلية الحاسب بحضور عميد الكلية.</li>
+                    <li>تنظيم معسكر تطوير المواقع والتطبيقات (نادي ظهير والمجلس الطلابي).</li>
+                    <li>تنظيم معسكر فلاتر (Flutter) التابع لنادي إنجاز، وحضور معسكر فلاتر للترم الثاني 1446هـ.</li>
+                    <li>تنسيق وتجهيز الحفل السنوي لنادي الروبوتات.</li>
+                </ul>
+                <ul class="bullet-list lang-en">
+                    <li>Supervised "Ramadan Riddles" competition and prepared structural documentation.</li>
+                    <li>Organized New Computer Science Students Orientation in the presence of the College Dean.</li>
+                    <li>Organized Web & App Development Bootcamp (Thaheer Club & Student Council).</li>
+                    <li>Organized & attended Flutter Bootcamp (Injaz Club - Semester 2, 1446H).</li>
+                    <li>Coordinated and organized the Annual Ceremony for the Wireless Robotics Club.</li>
+                </ul>
+            </div>
+
+            <div class="card volunteer-highlight">
+                <h3>
+                    <span class="lang-ar">العمل التطوعي — 203 ساعات تطوعية</span>
+                    <span class="lang-en">Volunteer Work — 203 Volunteer Hours</span>
+                </h3>
+                <p class="lang-ar">إكمال 203 ساعات تطوعية مسجلة عبر المنصة الوطنية للعمل التطوعي، ضمن المشاركة المجتمعية والأنشطة التطوعية.</p>
+                <p class="lang-en">Completed 203 registered volunteer hours through the National Volunteer Work Platform as part of community engagement and volunteer activities.</p>
+            </div>
+        </section>
+
+        <!-- قسم الشهادات والدورات -->
+        <section id="courses">
+            <h2><span class="lang-ar">الشهادات والدورات</span><span class="lang-en">Certifications & Training</span></h2>
+            <div class="card">
+                <ul class="bullet-list lang-ar">
+                    <li><strong>هاكاثون تحدي الذكاء الاصطناعي في خدمة المحتوى الإسلامي — ورش حضور:</strong> النماذج اللغوية الضخمة والتوليد المعزز بالاسترجاع (RAG)؛ تطوير البرمجيات بمساعدة الذكاء الاصطناعي؛ تصميم واجهات وتجربة المستخدم بالذكاء الاصطناعي (AI-Powered UI & UX Design)؛ الابتكار في نماذج الأعمال من الفكرة إلى الفرصة.</li>
+                    <li><strong>أكاديمية 32 — معسكر الحوسبة الكمية التمهيدي (Q Prep):</strong> شهادة حضور وإتمام المرحلة التحضيرية، 6 ساعات تدريبية، 17–18 سبتمبر 2026.</li>
+
+                    <li><strong>شهادة تقديم دورة أساسيات التسويق:</strong> معتمدة من نادي الروبوتات اللاسلكية.</li>
+                    <li><strong>شهادة مسار جافا سكريبت (JavaScript Track):</strong> معتمدة من منصة سطر التعليمية.</li>
+                    <li><strong>شهادة لغة HTML:</strong> معتمدة من منصة سطر التعليمية.</li>
+                    <li><strong>شهادة المبادئ والتقنيات الأساسية في الدرونز (Drones):</strong> معتمدة من منصة سطر التعليمية.</li>
+                    <li><strong>التسويق الرقمي (Digital Marketing):</strong> Udacity & Egypt FWD.</li>
+                    <li><strong>تطوير الويب (Web Development):</strong> Udacity & Egypt FWD.</li>
+                    <li><strong>تحليل البيانات (Data Analysis):</strong> Udacity & Egypt FWD.</li>
+                    <li><strong>دبلوم التسويق والمبيعات:</strong> معهد درة أرام (تدريب ميداني وتفوق ممتد لمدة 3 سنوات).</li>
+                    <li><strong>اللغة الإنجليزية:</strong> المعهد البريطاني (British Council).</li>
+                </ul>
+                <ul class="bullet-list lang-en">
+                    <li><strong>AI Challenge Serving Islamic Content — Workshop Attendance:</strong> LLMs and Retrieval-Augmented Generation (RAG); AI-Assisted Agentic Software Development; AI-Powered UI & UX Design; Business Model Innovation: From Idea to Opportunity.</li>
+                    <li><strong>Academy 32 — Quantum Computing Bootcamp (Q Prep):</strong> Attendance and completion of the preparatory stage (6 training hours), September 17–18, 2026.</li>
+
+                    <li><strong>Marketing Workshop Instructor Certificate:</strong> Certified by Wireless Robotics Club.</li>
+                    <li><strong>JavaScript Track Certificate:</strong> Certified by Satr Platform.</li>
+                    <li><strong>HTML Language Certificate:</strong> Certified by Satr Platform.</li>
+                    <li><strong>Drones Fundamentals & Basic Technologies Certificate:</strong> Certified by Satr Platform.</li>
+                    <li><strong>Digital Marketing Nanodegree:</strong> Udacity & Egypt FWD.</li>
+                    <li><strong>Web Development Track:</strong> Udacity & Egypt FWD.</li>
+                    <li><strong>Data Analysis Track:</strong> Udacity & Egypt FWD.</li>
+                    <li><strong>Marketing & Sales Diploma:</strong> Durrat Aram Institute (3-year extended practical field training).</li>
+                    <li><strong>English Language Course:</strong> British Council.</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="cta-section">
+            <h2><span class="lang-ar">لنعمل معًا</span><span class="lang-en">Let's Work Together</span></h2>
+            <p class="lang-ar">مهتمة بفرص التدريب والتعاون والمشاريع التقنية. يسعدني التواصل ومناقشة الفرص المناسبة.</p>
+            <p class="lang-en">I am interested in training opportunities, collaboration, and technology projects. Feel free to get in touch.</p>
+            <div class="hero-actions">
+                <a class="hero-btn primary" href="#contact"><span class="lang-ar">أرسل رسالة</span><span class="lang-en">Send a Message</span></a>
+                <a class="hero-btn secondary" href="https://www.linkedin.com/in/bassma-hossam-dawod-7536a3292" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="hero-btn secondary" href="https://github.com/bassmahossam083-cpu" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </section>
+
+        <!-- قسم التواصل ونموذج الرسائل التفاعلي -->
+        <section id="contact">
+            <h2><span class="lang-ar">بيانات ونموذج التواصل</span><span class="lang-en">Contact Information</span></h2>
+            
+            <div class="contact-links">
+                <a href="mailto:bassmahossam083@gmail.com">البريد الإلكتروني / Email</a>
+                <a href="tel:0504550651">0504550651</a>
+                <a href="https://www.linkedin.com/in/bassma-hossam-dawod-7536a3292" target="_blank">LinkedIn</a>
+                <a href="https://github.com/bassmahossam083-cpu" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+
+            <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--card-inner);">
+
+            <h3 style="margin-bottom: 10px; color: var(--secondary-color);">
+                <span class="lang-ar">أرسل لي رسالة مباشرة:</span>
+                <span class="lang-en">Send Me a Direct Message:</span>
+            </h3>
+
+            <!-- نموذج تواصل مرتبط مع Google Apps Script -->
+            <form class="contact-form" id="contactForm" action="https://script.google.com/macros/s/AKfycbw6DxoYW3Zgisz-DmNYIl_oD3oVwleBDhy1uGlPGdy-wA7jGqlsr6CIbBTlxU_aO_X6HQ/exec" method="POST">
+                <div class="form-group">
+                    <label><span class="lang-ar">الاسم كامل:</span><span class="lang-en">Full Name:</span></label>
+                    <input type="text" name="name" required placeholder="أدخل اسمك هنا...">
+                </div>
+                <div class="form-group">
+                    <label><span class="lang-ar">البريد الإلكتروني:</span><span class="lang-en">Email Address:</span></label>
+                    <input type="email" name="email" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label><span class="lang-ar">نص الرسالة:</span><span class="lang-en">Message:</span></label>
+                    <textarea name="message" rows="4" required placeholder="اكتب رسالتك هنا..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span class="lang-ar">إرسال الرسالة</span>
+                    <span class="lang-en">Send Message</span>
+                </button>
+            </form>
+                <div id="formStatus" class="form-status">
+                    <span class="lang-ar">تم إرسال الطلب. يُرجى التأكد من وصول الرسالة.</span>
+                    <span class="lang-en">Request submitted. Delivery could not be confirmed.</span>
+                </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© <span class="lang-ar">جميع الحقوق محفوظة - بسمة حسام داود 2026</span><span class="lang-en">All Rights Reserved - Bassma Hossam Dawod 2026</span></p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        let currentLang = 'ar';
+        
+        // التبديل بين اللغتين
+        function toggleLanguage() {
+            const arElements = document.querySelectorAll('.lang-ar');
+            const enElements = document.querySelectorAll('.lang-en');
+            const btn = document.getElementById('langBtn');
+
+            if (currentLang === 'ar') {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.documentElement.setAttribute('lang', 'en');
+                arElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'block');
+                btn.innerText = 'العربية';
+                currentLang = 'en';
+            } else {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.documentElement.setAttribute('lang', 'ar');
+                arElements.forEach(el => el.style.display = 'block');
+                enElements.forEach(el => el.style.display = 'none');
+                btn.innerText = 'English';
+                currentLang = 'ar';
+            }
+        }
+
+        // التبديل بين الوضع المضيء والداكن (Dark Mode)
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const themeBtn = document.getElementById('themeBtn');
+
+            if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                themeBtn.innerText = '🌙';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeBtn.innerText = '☀️';
+            }
+        }
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('section, .card');
+        revealElements.forEach(el => el.classList.add('reveal'));
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.08 });
+        revealElements.forEach(el => observer.observe(el));
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.style.display = window.scrollY > 500 ? 'block' : 'none';
+        });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Google Sheets contact form
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+        contactForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitButton ? submitButton.innerHTML : '';
+            if (submitButton) { submitButton.disabled = true; submitButton.innerHTML = currentLang === 'ar' ? 'جارٍ الإرسال...' : 'Sending...'; }
+            try {
+                await fetch('https://script.google.com/macros/s/AKfycbw6DxoYW3Zgisz-DmNYIl_oD3oVwleBDhy1uGlPGdy-wA7jGqlsr6CIbBTlxU_aO_X6HQ/exec', { method: 'POST', mode: 'no-cors', body: new FormData(contactForm) });
+                // The no-cors response is opaque; successful delivery cannot be verified here.
+                contactForm.reset();
+                if (formStatus) { formStatus.style.display = 'block'; setTimeout(() => formStatus.style.display = 'none', 6000); }
+            } catch (error) {
+                alert(currentLang === 'ar' ? 'تعذر إرسال الرسالة. تأكدي من الاتصال وحاولي مرة أخرى.' : 'Message could not be sent. Please check your connection and try again.');
+            } finally {
+                if (submitButton) { submitButton.disabled = false; submitButton.innerHTML = originalText; }
+            }
+        });
+    </script>
+</body>
+</html>
